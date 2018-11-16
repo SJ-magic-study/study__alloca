@@ -22,14 +22,16 @@ http://qiita.com/jkr_2255/items/b2c488c466e76f7069b1
 /************************************************************
 ************************************************************/
 
-int main()
+void func()
 {
 	char* p = (char*)alloca(100 * sizeof(char));
-	
 	strcpy(p, "saijo");
-	
 	printf("%s\n", p);
-	
+}
+
+int main()
+{
+	func();
 	return 0;
 }
 
